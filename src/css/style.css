@@ -1,0 +1,18 @@
+.container {
+  background-color: #fb6b6b;
+  height: 66.7rem;
+  width: 37.5rem;
+}
+
+.root {
+  margin: 0 auto;
+}
+body {
+  display: flex;
+  font-family: "Recursive", sans-serif;
+  font-family: "Righteous", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}

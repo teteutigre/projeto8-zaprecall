@@ -1,0 +1,36 @@
+.tela-inical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3rem;
+  height: 66.7rem;
+  width: 37.5rem;
+}
+
+.tela-inical button {
+  width: 24.6rem;
+  height: 5.4rem;
+
+  background: #ffffff;
+  border: 0.1rem solid #d70900;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+
+  font-family: "Recursive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+
+  color: #d70900;
+}
+
+.tela-inical h1 {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.6rem;
+
+  color: #ffffff;
+}
