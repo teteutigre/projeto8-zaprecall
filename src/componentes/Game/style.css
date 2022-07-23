@@ -45,17 +45,11 @@
   border-radius: 0.5rem;
 }
 
-.pergunta img {
-  width: 2rem;
-  height: 2.3rem;
-}
-
-.pergunta p {
+.card p {
   font-family: "Recursive";
   font-style: normal;
   font-weight: 700;
   font-size: 1.6rem;
-  line-height: 1.9rem;
 
   color: #333333;
 }
@@ -88,9 +82,21 @@ footer h2 {
   width: 29.9rem;
   height: 13.1rem;
 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
   background: #ffffd5;
   box-shadow: 0rem 0.4rem 0.5rem rgba(0, 0, 0, 0.15);
   border-radius: 0.5rem;
+}
+
+.pergunta > div {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+
+  margin-bottom: 0.6rem;
 }
 
 .pergunta p {
@@ -99,11 +105,7 @@ footer h2 {
   font-weight: 400;
   font-size: 1.8rem;
 
-  color: #333333;
-}
+  margin: 1.8rem 0 0 1.5rem;
 
-.pergunta img {
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
+  color: #333333;
 }

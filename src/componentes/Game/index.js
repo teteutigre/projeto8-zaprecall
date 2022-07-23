@@ -1,11 +1,11 @@
 import "./style.css";
+import Pergunta from "./Pergunta";
 import react from "react";
-import Card from "./Cards";
+import Card from "./Card";
 import Acerto from "./footer";
 import raio from "../img/raioPequeno.svg";
 
-const [clicado, setClicado] = react.useState(true);
-export default function Renderiza() {
+export default function Renderiza({ clicado, setClicado }) {
   return (
     <>
       <div className="section">
