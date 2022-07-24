@@ -1,34 +1,25 @@
-import react from "react";
+import React from "react";
 import Pergunta from "../Pergunta";
 import setinha from "/home/mateus/Projetos/projeto8-zaprecall/src/componentes/img/Vector.svg";
 import negativo from "/home/mateus/Projetos/projeto8-zaprecall/src/componentes/img/negativo.svg";
 import quaseimg from "/home/mateus/Projetos/projeto8-zaprecall/src/componentes/img/quase.svg";
 import zapimg from "/home/mateus/Projetos/projeto8-zaprecall/src/componentes/img/Acerto.svg";
 
-export default function Card({
-  card1,
-  setCard1,
-  card2,
-  setCard2,
-  setCard3,
-  card3,
-  card4,
-  setCard4,
-  resposta,
-  setResposta,
-  setResposta2,
-  resposta2,
-  setResposta3,
-  resposta3,
-  setResposta4,
-  resposta4,
-  setNao,
-  nao,
-  quase,
-  setQuase,
-  zap,
-  setZap,
-}) {
+export default function Card() {
+  const [card1, setCard1] = React.useState(true);
+  const [card2, setCard2] = React.useState(true);
+  const [card3, setCard3] = React.useState(true);
+  const [card4, setCard4] = React.useState(true);
+
+  const [resposta, setResposta] = React.useState(true);
+  const [resposta2, setResposta2] = React.useState(true);
+  const [resposta3, setResposta3] = React.useState(true);
+  const [resposta4, setResposta4] = React.useState(true);
+
+  const [nao, setNao] = React.useState(true);
+  const [quase, setQuase] = React.useState(true);
+  const [zap, setZap] = React.useState(true);
+
   const NaoLembrei = (
     <div className="card">
       <p1 className="NaoLembrei"> Pergunta 1</p1>
@@ -50,14 +41,12 @@ export default function Card({
     </div>
   );
 
-  const p1 = (
+  const c1 = (
     <div className="card">
       <p>Pergunta 1</p>
       <img onClick={() => setCard1(false)} src={setinha} />
     </div>
   );
-
-  const c1 = nao ? p1 : NaoLembrei;
 
   const c2 = (
     <div className="card">
@@ -82,9 +71,7 @@ export default function Card({
 
   return (
     <>
-      {card1
-        ? c1
-        : Pergunta(resposta, setResposta, setNao, setQuase, setZap)[0]}
+      {card1 ? c1 : Pergunta(resposta, setResposta, nao, setNao)[0]}
 
       {card2 ? c2 : Pergunta(resposta2, setResposta2)[1]}
 
