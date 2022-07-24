@@ -21,6 +21,12 @@ export default function Renderiza({
   resposta3,
   setResposta4,
   resposta4,
+  nao,
+  setNao,
+  setQuase,
+  quase,
+  zap,
+  setZap,
 }) {
   return (
     <>
@@ -47,6 +53,12 @@ export default function Renderiza({
             setResposta3={setResposta3}
             resposta4={resposta4}
             setResposta4={setResposta4}
+            nao={nao}
+            setNao={setNao}
+            setQuase={setQuase}
+            quase={quase}
+            zap={zap}
+            setZap={setZap}
           />
         </div>
       </div>

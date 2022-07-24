@@ -15,6 +15,10 @@ export default function App() {
   const [resposta3, setResposta3] = react.useState(true);
   const [resposta4, setResposta4] = react.useState(true);
 
+  const [nao, setNao] = react.useState(true);
+  const [quase, setQuase] = react.useState(true);
+  const [zap, setZap] = react.useState(true);
+
   return (
     <div className="container">
       {home ? (
@@ -37,6 +41,12 @@ export default function App() {
           setResposta3={setResposta3}
           resposta4={resposta4}
           setResposta4={setResposta4}
+          nao={nao}
+          setNao={setNao}
+          quase={quase}
+          setQuase={setQuase}
+          zap={zap}
+          setZap={setZap}
         />
       )}
     </div>

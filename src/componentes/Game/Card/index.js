@@ -1,6 +1,9 @@
 import react from "react";
 import Pergunta from "../Pergunta";
 import setinha from "/home/mateus/Projetos/projeto8-zaprecall/src/componentes/img/Vector.svg";
+import negativo from "/home/mateus/Projetos/projeto8-zaprecall/src/componentes/img/negativo.svg";
+import quaseimg from "/home/mateus/Projetos/projeto8-zaprecall/src/componentes/img/quase.svg";
+import zapimg from "/home/mateus/Projetos/projeto8-zaprecall/src/componentes/img/Acerto.svg";
 
 export default function Card({
   card1,
@@ -19,13 +22,42 @@ export default function Card({
   resposta3,
   setResposta4,
   resposta4,
+  setNao,
+  nao,
+  quase,
+  setQuase,
+  zap,
+  setZap,
 }) {
-  const c1 = (
+  const NaoLembrei = (
+    <div className="card">
+      <p1 className="NaoLembrei"> Pergunta 1</p1>
+      <img src={negativo} />
+    </div>
+  );
+
+  const QuaseLembrei = (
+    <div className="card">
+      <p1 className="Quase"> Pergunta 1</p1>
+      <img src={quaseimg} />
+    </div>
+  );
+
+  const AcertoZap = (
+    <div className="card">
+      <p1 className="zap"> Pergunta 1</p1>
+      <img src={zapimg} />
+    </div>
+  );
+
+  const p1 = (
     <div className="card">
       <p>Pergunta 1</p>
       <img onClick={() => setCard1(false)} src={setinha} />
     </div>
   );
+
+  const c1 = nao ? p1 : NaoLembrei;
 
   const c2 = (
     <div className="card">
@@ -50,7 +82,9 @@ export default function Card({
 
   return (
     <>
-      {card1 ? c1 : Pergunta(resposta, setResposta)[0]}
+      {card1
+        ? c1
+        : Pergunta(resposta, setResposta, setNao, setQuase, setZap)[0]}
 
       {card2 ? c2 : Pergunta(resposta2, setResposta2)[1]}
 

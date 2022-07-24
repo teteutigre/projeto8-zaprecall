@@ -88,7 +88,7 @@ footer h2 {
 }
 
 .pergunta {
-  width: 29.9rem;
+  width: 33rem;
   height: 13.1rem;
 
   display: flex;
@@ -100,14 +100,13 @@ footer h2 {
   border-radius: 0.5rem;
 }
 
-.pergunta > div {
+.icon {
   width: 95%;
   display: flex;
   justify-content: flex-end;
 
   margin-bottom: 0.6rem;
 }
-
 .pergunta p {
   font-family: "Recursive";
   font-style: normal;
@@ -117,4 +116,62 @@ footer h2 {
   margin: 1.8rem 0 0 1.5rem;
 
   color: #333333;
+
+  margin-top: 1.2rem;
+}
+
+.pergunta button {
+  width: 8.5rem;
+  height: 3.7rem;
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 5px;
+
+  font-family: "Recursive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.ButaoEstilo {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.6rem;
+}
+
+.Bvermelho {
+  background: #ff3030;
+}
+
+.NaoLembrei,
+.Quase,
+.zap {
+  font-family: "Recursive";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration-line: line-through;
+}
+
+.NaoLembrei {
+  color: #ff3030;
+}
+
+.Quase {
+  color: #ff922e;
+}
+
+.zap {
+  color: #2fbe34;
+}
+
+.Bamarelo {
+  background-color: #ff922e;
+}
+
+.Bverde {
+  background-color: #2fbe34;
 }
