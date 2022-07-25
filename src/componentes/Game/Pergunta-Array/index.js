@@ -34,4 +34,6 @@ const Questoes = [
   },
 ];
 
-export default Questoes;
+Questoes.sort(() => Math.random() - 0.5);
+
+export default Questoes.slice(0, 4);
